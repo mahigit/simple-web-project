@@ -1,33 +1,161 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #f7f9fb;
+    color: #222;
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
+    background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
+    color: #fff;
+    padding: 2rem 1rem 1rem 1rem;
     text-align: center;
 }
 
-h1 {
+header h1 {
     margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+.subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #e0e0e0;
+}
+
+nav {
+    margin: 1rem 0 0.5rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #4e4376;
+    color: #fff;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+}
+
+.hero-img {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.services {
+    margin-top: 2rem;
+}
+
+.services h2 {
+    color: #2b5876;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.services ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+}
+
+.services li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.contact {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #4e4376;
+    font-size: 1.2rem;
+}
+
+.contact a {
+    color: #2b5876;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #bfc9d1;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #f7f9fb;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: #2b5876;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form button:hover {
+    background: #4e4376;
 }
 
 footer {
-    background: #35424a;
-    color: #ffffff;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem 0;
+    background: #f0f0f0;
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
 }
