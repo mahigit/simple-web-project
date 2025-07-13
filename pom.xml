@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.bsrsai</groupId>
+    <artifactId>simple-web-project</artifactId>
+    <version>1.0.0</version>
+    <packaging>war</packaging>
+
+    <name>BSRS AI Solutions - Simple Web Project</name>
+    <description>A simple static web project for ML & AI startup, deployable to Azure App Service.</description>
+
+    <build>
+        <plugins>
+            <!-- Maven WAR Plugin to package static files -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <warSourceDirectory>src</warSourceDirectory>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
